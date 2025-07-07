@@ -1,0 +1,275 @@
+# KUBEJAX Project .gitignore
+
+# =============================================================================
+# Go Language
+# =============================================================================
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Test binary, built with `go test -c`
+*.test
+
+# Output of the go coverage tool, specifically when used with LiteIDE
+*.out
+
+# Dependency directories (remove the comment below to include it)
+vendor/
+
+# Go workspace file
+go.work
+
+# =============================================================================
+# KUBEJAX Specific
+# =============================================================================
+
+# Main binary outputs
+kjx
+kjx.exe
+kjx-*
+kubejax
+kubejax.exe
+kubejax-*
+
+# Development binaries
+kjx-dev
+kjx-test
+kjx-debug
+
+# Distribution builds
+dist/
+build/
+releases/
+
+# Temporary config files for testing
+*.tmp.conf
+*.tmp.yaml
+test-config-*
+temp-*
+
+# =============================================================================
+# IDE and Editors
+# =============================================================================
+
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# GoLand/IntelliJ
+.idea/
+*.iml
+*.iws
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# =============================================================================
+# Operating Systems
+# =============================================================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+*.tmp
+*.temp
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# =============================================================================
+# Development and Testing
+# =============================================================================
+
+# Test coverage files
+coverage.txt
+coverage.html
+coverage.out
+*.cover
+
+# Benchmarking
+*.bench
+
+# Profiling
+*.prof
+*.pprof
+
+# Debug files
+debug
+debug.log
+*.debug
+
+# Log files
+*.log
+logs/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# =============================================================================
+# CI/CD and Deployment
+# =============================================================================
+
+# Docker
+.dockerignore
+Dockerfile.dev
+docker-compose.override.yml
+
+# Kubernetes
+k8s-dev/
+*.dev.yaml
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+
+# =============================================================================
+# Security and Credentials
+# =============================================================================
+
+# Kubernetes configs (IMPORTANT: Never commit real kubeconfigs!)
+*.kubeconfig
+kubeconfig*
+config-*
+cluster-*.conf
+cluster-*.yaml
+
+# Security files
+*.pem
+*.key
+*.crt
+*.p12
+*.pfx
+secrets/
+credentials/
+
+# Environment files
+.env
+.env.local
+.env.production
+.env.test
+
+# =============================================================================
+# Documentation and Assets
+# =============================================================================
+
+# Generated documentation
+docs/_build/
+docs/build/
+*.pdf
+
+# Compressed files
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# =============================================================================
+# Package Managers and Dependencies
+# =============================================================================
+
+# Node.js (if using for docs/tooling)
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+
+# Python (if using for scripts)
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+pip-log.txt
+pip-delete-this-directory.txt
+.env
+
+# =============================================================================
+# Backup and Archive
+# =============================================================================
+
+# Backup files
+*.bak
+*.backup
+*.old
+*.orig
+
+# Archive files
+*.tar.gz
+*.tgz
+*.zip
+
+# =============================================================================
+# Custom Project Files
+# =============================================================================
+
+# Local development overrides
+local/
+.local/
+
+# Personal notes and todos
+NOTES.md
+TODO.md
+PERSONAL.md
+
+# Performance testing
+perf/
+benchmark/
